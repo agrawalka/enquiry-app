@@ -1,7 +1,3 @@
-#link for tutorial of kivymd
-#https://towardsdatascience.com/building-android-apps-with-python-part-1-603820bebde8
-
-
 import kivy
 from kivy.app import App
 from kivy.uix.button import Button
