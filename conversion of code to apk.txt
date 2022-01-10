@@ -1,0 +1,41 @@
+For converting a kivy code to a application we will use google collab!
+
+steps:
+
+1. Login to google collab and connect collab to your pc.
+
+2. Upload the code in the collab and make sure the name of the file is "main.py".
+
+3.Now we need to fire some commands in order to convert the code to app in the given sequence:
+	i) !pip install buildozer
+       ii) !pip install cython==0.29.19
+      iii) !sudo apt-get install -y \
+    	   python3-pip \
+           build-essential \
+           git \
+           python3 \
+           python3-dev \
+           ffmpeg \
+           libsdl2-dev \
+           libsdl2-image-dev \
+           libsdl2-mixer-dev \
+           libsdl2-ttf-dev \
+           libportmidi-dev \
+           libswscale-dev \
+           libavformat-dev \
+           libavcodec-dev \
+           zlib1g-dev
+       iV) !sudo apt-get install -y \
+           libgstreamer1.0 \
+           gstreamer1.0-plugins-base \
+           gstreamer1.0-plugins-good
+        V) !sudo apt-get install build-essential libsqlite3-dev sqlite3 bzip2 libbz2-dev zlib1g-dev libssl-dev openssl libgdbm-dev libgdbm-compat-dev liblzma-dev libreadline-dev libncursesw5-dev libffi-dev uuid-dev libffi6
+       vi) !sudo apt-get install libffi-dev
+
+4. vii) !buildozer init
+Now when we will fire this commmand we will gert a que with options y/n...just write "y" in the text box given and press enter and the command will execute and a buildozer.spec file will be created in the left section.
+
+5. viii) !buildozer -v android debug
+Now this command will create our apk file.When you fire this command you will again see a question with y/n options, just write y and press enter.A bin folder will be created which will contain our apk file at the end of the execution of this command.in the middle you will again get a question of y/n..write y and enter.
+
+6. Now once this command is executed you can double clock on the bin folder you will find an apk file. You can cownload the file and install it in youur mobile/pc. 
